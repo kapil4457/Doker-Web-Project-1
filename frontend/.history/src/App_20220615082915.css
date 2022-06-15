@@ -1,0 +1,12 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing:border-box;
+    font-family: roboto;
+
+}
+
+.active{
+    border-bottom:2px solid red;
+    transition:cubic-bezier(0, 0.05, 0.795, 0.035) ease-in-out 2sec;
+}

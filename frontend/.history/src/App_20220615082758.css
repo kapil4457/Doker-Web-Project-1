@@ -1,0 +1,12 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing:border-box;
+    font-family: roboto;
+
+}
+
+.active{
+    border-bottom:2px solid red;
+    transition:all ease-in 0.2s;
+}

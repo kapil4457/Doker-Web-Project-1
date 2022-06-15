@@ -1,0 +1,24 @@
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
+const Gallery = () => {
+  return (
+    <Carousel>
+      <div>
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltJTIwZXF1aXBtZW50fGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
+        <p className="legend">Legend 1</p>
+      </div>
+      <div>
+        <img src="Gym2.jpeg" />
+        <p className="legend">Legend 2</p>
+      </div>
+      <div>
+        <img src="Gym3.jpeg" />
+        <p className="legend">Legend 3</p>
+      </div>
+    </Carousel>
+  );
+};
+
+export default Gallery;
