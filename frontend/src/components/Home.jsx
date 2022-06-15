@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Gallery from "./Gallery.jsx";
+import TransformationCarousel from "./TransformationCarousel.jsx";
 const Home = () => {
   return (
     <>
@@ -24,6 +25,22 @@ const Home = () => {
         <h1 id="gallery">Gallery</h1>
         <Gallery />
       </GalleryCarousal>
+      <AboutUs>
+        <h1>About Us</h1>
+        <div className="cont">
+          <p>
+            We are one of the <b>leading</b> Gyms in India.
+            <br />
+            <br />
+            We have helped <b>thousands of people</b> to achieve their{" "}
+            <b>dream physique</b> .
+          </p>
+          <Carousal>
+            <TransformationCarousel />
+          </Carousal>
+        </div>
+      </AboutUs>
+      <ContactUs></ContactUs>
     </>
   );
 };
@@ -100,7 +117,7 @@ const Second = styled.div`
 `;
 
 const GalleryCarousal = styled.div`
-  height: 100vh;
+  height: 101vh;
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -115,3 +132,35 @@ const GalleryCarousal = styled.div`
     text-shadow: 0.2pc 0.2pc 0.2pc gray;
   }
 `;
+
+const AboutUs = styled.div`
+  height: 105vh;
+  width: 100%;
+
+  .cont {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    p {
+      padding: 1rem;
+      font-size: 2.5rem;
+    }
+  }
+  h1 {
+    width: 100%;
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    font-weight: 500;
+    font-size: 5.5rem;
+    text-shadow: 0.3pc 0.3pc 0.3pc gray;
+  }
+`;
+
+const Carousal = styled.div`
+  box-shadow: 0pc 0pc 0.5pc gray;
+`;
+const ContactUs = styled.div``;
